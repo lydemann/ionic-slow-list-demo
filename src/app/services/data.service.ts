@@ -74,7 +74,12 @@ export class DataService {
   constructor() { }
 
   public getMessages(): Message[] {
-    return this.messages;
+    return [...this.messages, ...this.messages,
+      ...this.messages,
+      ...this.messages, ...this.messages, ...this.messages,
+      ...this.messages, ...this.messages, ...this.messages,
+      ...this.messages, ...this.messages, ...this.messages, ...this.messages,
+      ...this.messages, ...this.messages, ...this.messages, ...this.messages, ...this.messages];
   }
 
   public getMessageById(id: number): Message {

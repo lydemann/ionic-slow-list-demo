@@ -7,6 +7,9 @@ import { DataService, Message } from '../services/data.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+
+  items = [{id: '1', text: 'Some val 1'}, {id: '2', text: 'Some val 2'}];
+
   constructor(private data: DataService) {}
 
   refresh(ev) {
